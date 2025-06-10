@@ -1,0 +1,67 @@
+/* --- ESTILOS RESPONSIVOS --- */
+
+/* Tablets (hasta 1024px) */
+@media (max-width: 1024px) {
+    .team li {
+        width: 48%;
+    }
+    .features li {
+        width: 50%;
+    }
+    .galleryWrap {
+        justify-content: space-around;
+    }
+    .imgContainer {
+        width: 48%;
+    }
+}
+
+/* Tablets y Móviles (hasta 768px) */
+@media (max-width: 768px) {
+    .menu-item {
+        display: none;
+    }
+    .resp-menu {
+        display: block;
+    }
+    select#resp-menu {
+        background: #fff;
+        border: 1px solid #ddd;
+        padding: 8px;
+        border-radius: 5px;
+    }
+
+    header article, header figure {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    header figure {
+        margin-top: 40px;
+    }
+    
+    .team li {
+        width: 100%;
+        max-width: 350px;
+        margin: 20px auto;
+    }
+
+    .features li {
+        width: 100%;
+        max-width: 400px;
+        margin: 10px auto;
+    }
+    
+    .imgContainer {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .pricetab {
+        width: 80%;
+        max-width: 320px;
+    }
+    .pricetab-featured {
+        transform: scale(1); /* Resetear el escalado en móvil */
+    }
+}
