@@ -1,67 +1,24 @@
-/* --- ESTILOS RESPONSIVOS --- */
-
-/* Tablets (hasta 1024px) */
-@media (max-width: 1024px) {
-    .team li {
-        width: 48%;
-    }
-    .features li {
-        width: 50%;
-    }
-    .galleryWrap {
-        justify-content: space-around;
-    }
-    .imgContainer {
-        width: 48%;
-    }
+@media (max-width: 992px) {
+    .nav-links { gap: 20px; }
+    .hero-container { flex-direction: column; text-align: center; }
+    .hero-visuals { order: -1; margin-bottom: 40px; width: 60%; }
+    .features-grid, .team-grid { grid-template-columns: repeat(2, 1fr); }
+    .hosting-plans { grid-template-columns: 1fr; max-width: 450px; margin: 0 auto; }
+    .portfolio-gallery { grid-template-columns: repeat(2, 1fr); }
+    .contact-wrapper { flex-direction: column; }
+    .map-container { min-height: 350px; width: 100%; }
 }
 
-/* Tablets y Móviles (hasta 768px) */
 @media (max-width: 768px) {
-    .menu-item {
-        display: none;
-    }
-    .resp-menu {
-        display: block;
-    }
-    select#resp-menu {
-        background: #fff;
-        border: 1px solid #ddd;
-        padding: 8px;
-        border-radius: 5px;
-    }
-
-    header article, header figure {
-        width: 100%;
-        float: none;
-        text-align: center;
-    }
-    header figure {
-        margin-top: 40px;
-    }
-    
-    .team li {
-        width: 100%;
-        max-width: 350px;
-        margin: 20px auto;
-    }
-
-    .features li {
-        width: 100%;
-        max-width: 400px;
-        margin: 10px auto;
-    }
-    
-    .imgContainer {
-        width: 100%;
-        max-width: 400px;
-    }
-
-    .pricetab {
-        width: 80%;
-        max-width: 320px;
-    }
-    .pricetab-featured {
-        transform: scale(1); /* Resetear el escalado en móvil */
-    }
+    .section-title { font-size: 32px; }
+    .nav-links { position: absolute; top: 80px; left: 0; width: 100%; flex-direction: column; background-color: var(--white-color); padding: 20px 0; text-align: center; gap: 0; transform: translateY(-150%); transition: transform 0.3s ease; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+    .nav-links.active { transform: translateY(0); }
+    .nav-links li { padding: 15px 0; }
+    .nav-button { display: none; }
+    .hamburger { display: block; }
+    .hero-section { padding: 120px 0; }
+    .hero-content h1 { font-size: 40px; }
+    .hero-visuals { width: 80%; }
+    .hero-buttons { flex-direction: column; align-items: center; gap: 15px; }
+    .features-grid, .team-grid, .portfolio-gallery { grid-template-columns: 1fr; }
 }
